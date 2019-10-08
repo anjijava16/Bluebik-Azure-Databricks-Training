@@ -1,4 +1,4 @@
-<!-- TOC -->autoauto- [Instruction - Databricks Airlift Data Engineering Workshop](#instruction---databricks-airlift-data-engineering-workshop)auto    - [Data Engineering Notebooks](#data-engineering-notebooks)autoauto<!-- /TOC -->
+[[TOC]]
 
 # Instruction - Databricks Airlift Data Engineering Workshop
 
@@ -8,9 +8,13 @@
 
 **Instructor**: Kyle Akepanidtaworn, Cloud Solution Architect (Advanced Analytics & Artificial Intelligence)
 
+## Pre-Requisite
+
+xxx
+
 ## Data Engineering Notebooks
 
-Lab Duration: 1 hour
+**Lab Duration**: 1 hour
 
 Databricks notebooks covering data engineering and data science workloads (Microsoft Airlift Agenda)
 
