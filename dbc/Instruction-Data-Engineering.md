@@ -31,23 +31,26 @@
 
 ## Data Engineering Notebooks
 
-**Lab Duration**: 1 hour
+**Lab Duration**: 1.5 hour
 
 Databricks notebooks covering data engineering and data science workloads (Microsoft Airlift Agenda). Here's our training plan:
 
 * Reading Data Basics
+  * Apache Spark is an open source cluster computing framework for fast real-time large-scale data processing. Since its inception in 2009 at UC Berkeley’s AMPLab, Spark has seen major growth.
+  * Spark revolves around the concept of a resilient distributed dataset (RDD), which is a fault-tolerant collection of elements that can be operated on in parallel. There are two ways to create RDDs: parallelizing an existing collection in your driver program, or referencing a dataset in an external storage system, such as a shared filesystem, HDFS, HBase, or any data source offering a Hadoop InputFormat.
   * **Databricks File System (DBFS)** is a layer over Azure's blob store. Files in DBFS persist to the blob store, so data is not lost even after clusters are terminated.
   * **Parquet** is a column-based storage format for Hadoop.
   * A Databricks archive is a JAR file with extra metadata and has the extension .dbc.
-  * Spark revolves around the concept of a resilient distributed dataset (RDD), which is a fault-tolerant collection of elements that can be operated on in parallel. There are two ways to create RDDs: parallelizing an existing collection in your driver program, or referencing a dataset in an external storage system, such as a shared filesystem, HDFS, HBase, or any data source offering a Hadoop InputFormat.
 * Transformations & Actions
+  * A DataFrame is the most common Structured API and simply represents a table of data with rows and columns. The list of columns and the types in those columns the schema. A simple analogy would be a spreadsheet with named columns.
 * Integration with Azure Data Services
 * Azure Event Hub
 * Azure SQL Data Warehouse
 * Azure Cosmos DB
 * Delta Lakes
+  * Delta Lake is an open source storage layer that brings reliability to data lakes. Delta Lake provides ACID transactions, scalable metadata handling, and unifies streaming and batch data processing. Delta Lake runs on top of your existing data lake and is fully compatible with Apache Spark APIs. Delta Lake on Databricks allows you to configure Delta Lake based on your workload patterns and provides optimized layouts and indexes for fast interactive queries.
+  * **UPSERT** - Literally means "UPdate" and "inSERT". It means to atomically either insert a row, or, if the row already exists, UPDATE the row.
+  * **APPEND** - Add on to the end of the dataframe. 
 * Batch Jobs
 * Streaming Jobs
 * Optimization
-
-![101 AutoML Introduction 00](automl-images/101-automl-introduction-00.PNG)
